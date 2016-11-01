@@ -2,7 +2,6 @@
 
 var app = angular.module('playApp', [
   'ngRoute',
-  'playApp.units',
   'playApp.address',
   'playApp.hdkeys',
   'playApp.transaction',
@@ -12,7 +11,7 @@ var app = angular.module('playApp', [
 
 // Config
 app.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/units'});
+  $routeProvider.otherwise({redirectTo: '/address'});
 }]);
 
 app.constant('bitcore', require('bitcore-lib'));

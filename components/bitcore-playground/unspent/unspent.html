@@ -2,12 +2,11 @@
   <div class="large-9 small-12 columns content-title">
     <h1>Unspent Transaction Outputs</h1>
   </div>
-  <ng-include src="'components/network.html'"/>
 
 </div>
 <div class="row collapse pb20">
   <div class="small-12 columns">
-    <p>Retrieve all the UTXOs associated with a bitcoin address.</p>
+    <p>Retrieve all the UTXOs associated with a blackcoin address.</p>
   </div>
 </div>
 <div class="preloader"></div>
@@ -46,7 +45,7 @@
       <div class="coin-in-box">
         <div class="v-align fnt20 pr5"></div>
       </div>
-      <h1 class="amount ml10 fnt1">{{utxo.satoshis|btc}}<span class="btc"> BTC</span></h1>
+      <h1 class="amount ml10 fnt1">{{utxo.satoshis|btc}}<span class="btc"> BLK</span></h1>
       <div class="fnt09 mt2 row collapse">
         <span class="item-title large-1 small-3 columns center">TX ID:</span>
         <span class="item-data large-11 small-9 columns fntgrey1">{{utxo.txId}}</span>
