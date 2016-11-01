@@ -2,13 +2,9 @@ include ../_mixins/jademin
 
 block vars
   //- defaults – `append vars` to modify
-  -var title = 'Bitcoin Platform and API';
-  -var description = 'A powerful, modular node for bitcoin and blockchain-based apps.';
-  -var twitterCard = 'https://bitcore.io/images/social/card.jpg';
-  -var ogSiteUrl = 'Bitcore.io';
-  -var ogSiteName = 'Bitcore.io';
-  -var ogImage = 'https://bitcore.io/images/social/avatar.jpg';
-  -var appleTouchTitle = 'Bitcore';
+  -var title = 'Blackcoin Platform and API';
+  -var description = 'A powerful, modular node for blackcoin and blockchain-based apps.';
+  -var appleTouchTitle = 'Blackcore';
   -var appleTouchIcon = 'apple-touch-icon-precomposed.png';
   -var androidIcon = '/images/touch/chrome-touch-icon-192x192.png';
   -var wintileIcon = '/images/touch/ms-touch-icon-144x144-precomposed.png';
@@ -23,25 +19,11 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
 
     block title
-      title #{title} | Bitcore
+      title #{title} | Blackcore
 
     block meta
       meta(name='description', content='#{description}')
 
-      // Twitter Card data
-      meta(name='twitter:card', content='summary')
-      meta(name='twitter:site', content='@BitPay')
-      meta(name='twitter:title', content='#{title}')
-      meta(name='twitter:description', content='#{description}')
-      meta(name='twitter:image', content='#{twitterCard}')
-
-      // Open Graph data (Facebook and Reddit)
-      meta(property='og:title', content='#{title}')
-      meta(property='og:type', content='article')
-      meta(property='og:url', content='https://bitcore.io/')
-      meta(property='og:image', content='#{ogImage}')
-      meta(property='og:description', content='#{description}')
-      meta(property='og:site_name', content='#{ogSiteName}')
 
     // Add to homescreen for Chrome on Android
     meta(name='mobile-web-app-capable', content='yes')
