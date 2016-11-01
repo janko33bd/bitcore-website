@@ -16,14 +16,14 @@ In this tutorial, we will build a desktop app that timestamps original files int
 
 #### How it works
 1. The user uploads a file via the desktop app.
-2. The app hashes the file and asks Bitcore node whether the file has already been timestamped in the blockchain.
+2. The app hashes the file and asks Blackcore node whether the file has already been timestamped in the blockchain.
 3. If the file has not yet been timestamped, the app generates a new BTC address and displays that address to the user in the form of a QR code, prompting the user to send a small amount of BTC to that address.
 4. Once the user's BTC arrives at the address, your Bitcore node utilizes the received bitcoin to broadcast a new transaction with the file hash included, serving as a permanent timestamp in the blockchain.
 
 #### What we will use
 
-1. A [Bitcore](http://bitcore.io/) node to communicate with the blockchain
-2. A custom Bitcore service to extend your Bitcore node so that it can timestamp files
+1. A [Blackcore](http://node.blackcoin.io/) node to communicate with the blockchain
+2. A custom Blackcore service to extend your Bitcore node so that it can timestamp files
 3. [Electron](http://electron.atom.io) and [AngularJS](https://angularjs.org/) to serve as the Desktop UI to communicate with your Bitcore server. (The details of Electron and AngularJS will not be covered as part of this tutorial.)
 
 The final app will look like this:

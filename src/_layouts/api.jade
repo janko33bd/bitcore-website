@@ -12,33 +12,9 @@ block menu
 
   - if (true) {
     a(href="/api/")
-      h3.menu-header.m-t-md Bitcore
+      h3.menu-header.m-t-md Blackcore
       ul.nav.nav-pills.nav-stacked
         +item('Overview', '')
-  - }
-
-  - if (section === 'node') {
-    h3.menu-header.m-t-md Node
-    ul.nav.nav-pills.nav-stacked
-      +item('Get Started', 'node')
-      +item('Node Constructor', 'node-constructor')
-      +item('Event Bus', 'bus')
-      +item('Development', 'development')
-      +item('Upgrade', 'upgrade')
-  - } else {
-    a(href="/api/node")
-      h3.menu-header.m-t-md Node
-  - }
-
-  - if (section === 'service') {
-    h3.menu-header.m-t-md Services
-    ul.nav.nav-pills.nav-stacked
-      +item('Overview', 'service')
-      +item('Bitcoin Service', 'service/bitcoin')
-      +item('Web Service', 'service/web')
-  - } else {
-    a(href="/api/service")
-      h3.menu-header.m-t-md Services
   - }
 
   - if (section === 'lib') {
